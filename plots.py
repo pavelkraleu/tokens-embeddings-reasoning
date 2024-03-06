@@ -35,7 +35,7 @@ def plot_model_lang_distributions(lang_dict: dict, png_plot_path: str, plot_y_la
     plt.savefig(png_plot_path, dpi=DPI)
 
 
-def plot_as_separate_charts(lang_dict: dict, png_plot_path: str, plot_y_label: str, add_text=False):
+def plot_as_separate_charts(lang_dict: dict, png_plot_path: str, plot_y_label: str):
     for i, [model_name, model_values] in enumerate(lang_dict.items()):
         new_dict = {model_name: model_values}
 
@@ -47,7 +47,7 @@ def plot_as_separate_charts(lang_dict: dict, png_plot_path: str, plot_y_label: s
         )
 
 
-def plot_boxplot_for_matrices(matrices_dict):
+def plot_boxplot_for_matrices(matrices_dict: dict, png_plot_path: str):
     num_matrices = len(matrices_dict)
 
     # Calculate the number of rows needed to plot all matrices
@@ -70,5 +70,5 @@ def plot_boxplot_for_matrices(matrices_dict):
         ax.set_ylim(min_value, max_value)
 
     plt.tight_layout()
-    plt.savefig('boxplot.png', dpi=DPI)
+    plt.savefig(png_plot_path, dpi=DPI)
     plt.show()
