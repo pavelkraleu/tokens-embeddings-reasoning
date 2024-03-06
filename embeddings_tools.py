@@ -6,6 +6,8 @@ from embedding_models import OpenAIEmbeddingModel, OpenAIEmbeddingModel3Small, a
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+DPI = 60
+
 
 def find_min_max_from_dict_matrices(dict_matrices):
     overall_min = np.inf
@@ -47,7 +49,7 @@ def plot_confusion_matrices(matrices_dict, output_path: str, only_latin_langs=Fa
         plt.title(plot_name)
 
     plt.tight_layout()
-    plt.savefig(output_path, dpi=300)
+    plt.savefig(output_path, dpi=DPI)
     # plt.show()
 
 
