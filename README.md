@@ -1,8 +1,8 @@
-# Are LLMs smarter in some languages than others? 
+# LLMs across languages
+
+This repository holds information for my 
 
 ## Tokens
-
-For deeper insights about token go to [tokens.ipynb](tokens.ipynb)
 
 ### TL;DR
 
@@ -18,9 +18,9 @@ For deeper insights about token go to [tokens.ipynb](tokens.ipynb)
 
 ![Change in number of tokens when diacritics is removed](plots_token/no_special_chars_pct_difference.png)
 
-## Embeddings
+![](plots_token/model_lang_distributions_difference_to_gpt4.png)
 
-For deeper insights about token go to [embeddings.ipynb](embeddings.ipynb)
+## Embeddings
 
 ### TL;DR
 
@@ -32,9 +32,16 @@ For deeper insights about token go to [embeddings.ipynb](embeddings.ipynb)
 
 ![Cosine similarity to slightly rephrased texts in various languages](plots_embeddings/difference_to_rephrased_text.png)
 
+![](plots_embeddings/kimchy.png)
+
+![](plots_embeddings/different.png)
+
+![](plots_embeddings/different_texts.png)
+
 ## Reasoning
 
-TODO
+![](answ.png)
 
+![](cnt.png)
 
 
