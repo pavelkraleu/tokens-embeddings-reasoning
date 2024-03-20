@@ -1,10 +1,9 @@
 # LLMs across languages
 
-This repository holds information for my 
+In this repository was done research for my presentation 
 
 ## Tokens
 
-### TL;DR
 
 #### Price comparison to process same text in various LLMs
 
@@ -22,7 +21,6 @@ This repository holds information for my
 
 ## Embeddings
 
-### TL;DR
 
 #### Cosine similarity to same texts in various languages
 
