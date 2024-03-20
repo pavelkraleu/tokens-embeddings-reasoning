@@ -45,7 +45,7 @@ class GeminiEmbeddingModel(BaseEmbeddingModel):
 class HuggingFaceModel(BaseEmbeddingModel):
     def _compute_embedding(self, text: str) -> list[float]:
         embed_model = HuggingFaceEmbedding(model_name=self.NAME)
-        return embed_model.get_text_embedding(text)
+        return embed_model.get_text_embedding("query: "+text)
 
 
 class E5LargeHuggingFaceModel(HuggingFaceModel):

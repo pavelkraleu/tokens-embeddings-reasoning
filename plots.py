@@ -11,7 +11,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 DPI = 60
 
 
-def plot_model_lang_distributions(lang_dict: dict, png_plot_path: str, plot_y_label: str, num_rows=3, palette='plasma'):
+def plot_model_lang_distributions(lang_dict: dict, png_plot_path: str, plot_y_label: str, num_rows=3, palette='plasma', title_size=30):
     num_models = len(lang_dict)
     num_columns = -(-num_models // num_rows)
     font_size = 20
@@ -25,7 +25,7 @@ def plot_model_lang_distributions(lang_dict: dict, png_plot_path: str, plot_y_la
         values = list(lang_data.values())
 
         sns.barplot(x=categories, y=values, ax=axes[idx], palette=palette)
-        axes[idx].set_title(model_name, fontsize=font_size*2)
+        axes[idx].set_title(model_name, fontsize=title_size)
         # axes[idx].set_xlabel('Languages', fontsize=font_size)
         axes[idx].set_ylabel(plot_y_label if idx % num_columns == 0 else '', fontsize=font_size*2)
         axes[idx].tick_params(axis='x', rotation=90, labelsize=font_size)
